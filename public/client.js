@@ -26,7 +26,10 @@ $( function () {
 
 		var url = $(this).prev('input[type="text"]').val();
 
-		ws = new MozWebSocket(url);
+                if (window.WebSocket)
+                    ws = new WebSocket(url);
+                if (window.MozWebSocket)
+                    ws = new MozWebSocket(url);
 		ws.binaryType = 'arraybuffer';
 		ws.onopen = function (event) {
 			log('Connect', 'Connected to the server.');
