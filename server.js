@@ -12,7 +12,7 @@
 //---------------------------------------------------------------------------
 var config = {
 	http: {
-		defaultPort: 80,
+		defaultPort: 9080,
 		indexFile: '/index.html',
 		resourceDir: 'public',
 	},

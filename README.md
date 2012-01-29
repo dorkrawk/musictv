@@ -1,7 +1,8 @@
-AudioStream - Streaming audio using Firefox Audio Data API + Node.js + WebSocket + Redis Pub/Sub
+MusicTV - Share live music
 ===========================
 
-This is an experimental application runs with Firefox, Node.js, and Redis.
+
+This is based on https://github.com/kulikala/AudioStream
 
 
 ## Overall architecture

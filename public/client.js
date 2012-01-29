@@ -4,6 +4,7 @@
 // Copyright (C) 2011 Kulikala. All Rights Reserved.
 //---------------------------------------------------------------------------
 
+var ws;
 
 ( function () {
 
@@ -12,10 +13,9 @@
 //---------------------------------------------------------------------------
 $( function () {
 	var as;
-	var ws;
 
 	$('section.Connect input[type="text"]').val(
-		'ws://' + location.hostname + ':' + (location.port || 80)
+		'ws://' + location.hostname + ':' + (location.port || 9081)
 	);
 
 	$('section.Connect button').click( function () {
