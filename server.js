@@ -41,8 +41,8 @@ app.get( '/', function (request, response) {
 });
 
 app.listen(serverPort, function() {
-    console.log( (new Date()) + ' : Server is listening on port ' + serverPort + '.' );
-} ;
+console.log( (new Date()) + ' : Server is listening on port ' + serverPort + '.' );
+});
 
 var wsConnections = [];
 var wsServer = new $r.websocket.server({
@@ -73,7 +73,7 @@ wsServer.on( 'connect', function (connection) {
             publisher.publish( 'data', connection.uid + '@' + data );
     });
     connection.on( 'close', function () {
-        console.log((newDate())+':Connection'+connection.remoteAddress+'disconnected.');
+        console.log((new Date())+':Connection'+connection.remoteAddress+'disconnected.');
         wsConnections.splice(wsConnections.indexOf(connection), 1);
     });
 });
