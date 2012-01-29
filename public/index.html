@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>AudioStream</title>
+         <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="audiostream.js"></script>
 	<script type="text/javascript" src="client.js"></script>
@@ -13,13 +14,13 @@
 	</style>
 </head>
 <body>
-	<div id="Wrapper">
+	<div class='container' id="Wrapper">
 		<h1>AudioStream</h1>
 
 		<section class="Connect">
 			<h2>Establish WebSocket connection</h2>
 			<input type="text" id='url'/>
-			<button>Connect</button>
+			<input type='button' class='btn' value='connect'>
 			<div class="Status"></div>
 		</section>
 
@@ -27,15 +28,15 @@
 			<h2>Load audio file and play sound</h2>
 			<input id='song1' type="text" value="sample2.ogg"/>
 			<input id='song2' type="text" value="sample.ogg"/>
-			<button class="Play">Load & Play</button>
-			<button class="Stop">Stop</button>
+			<input type='button' class='btn' value='Load & Play'>
+			<input type='button' class='btn' value='Stop'>
 			<div class="Status"></div>
 		</section>
 
 		<section class="ReceiveAndPlay">
 			<h2>Receive audio data and play</h2>
-			<button class="Start">Start receiving</button>
-			<button class="Stop">Stop</button>
+			<input type='button' class='btn' value='Load & Play'>
+			<input type='button' class='btn' value='Stop'>
 			<div class="Status"></div>
 		</section>
 	</div>
